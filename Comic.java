@@ -1,56 +1,53 @@
-<<<<<<< HEAD
-class Comic {
-    int comic_id;
-    String title;
-    String author;
-    String description;
-    String favourite;
-    String cover_image;
-    String release_date;
-    String Status;
-    int rating;
-    int views;
-    String comments;
-}
-=======
 
 public class Comic {
 
-    int comic_id;
-    String title;
-    String author;
-    String description;
-    String cover_image;
-    String release_date;
-    String status;
-    int rating;
-    int views;
-    String category;
-    String comments;
+    public int comic_id;
+    public String title;
+    public String author;
+    public String description;
+    public String cover_image;
+    public String release_date;
+    public String status;
+    public int rating;
+    public int views;
+    public String category;
+    public String comments;
 
-     public Comic(int comic_id, String title, String author, String description, String cover_image,
-                 String release_date, String status, String category) {
-        this.comic_id = comic_id;
-        this.title = title;
-        this.author = author;
-        this.description = description;
-        this.cover_image = cover_image;
-        this.release_date = release_date;
-        this.status = status;
-        this.category = category;
+    private Comic() {
     }
 
-    @Override
-    public String toString() {
-        return "ID: " + comic_id
-                + "\nTitle: " + title
-                + "\nAuthor: " + author
-                + "\nCategory: " + category
-                + "\nStatus: " + status
-                + "\nRelease Date: " + release_date
-                + "\nDescription: " + description
-                + "\nCover Image: " + cover_image
-                + "\n---------------------------";
+    public static Comic createComic(int comic_id, String title, String author, String description, String cover_image, String release_date, String status, String category) {
+        Comic comic = new Comic();
+        comic.comic_id = comic_id;
+        comic.title = title;
+        comic.author = author;
+        comic.description = description;
+        comic.cover_image = cover_image;
+        comic.release_date = release_date;
+        comic.status = status;
+        comic.category = category;
+        return comic;
+    }
+
+    public static Comic comicStats(String comments, int rating, int views) {
+        Comic comic = new Comic();
+        comic.comments = comments;
+        comic.rating = rating;
+        comic.views = views;
+        return comic;
+    }
+    
+    // Display comic details
+    public void displayInfo() {
+        System.out.println("Comic Details:");
+        System.out.println("ID: " + comic_id);
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Category: " + category);
+        System.out.println("Status: " + status);
+        System.out.println("Release Date: " + release_date);
+        System.out.println("Description: " + description);
+        System.out.println("Cover Image: " + cover_image);
+        System.out.println("---------------------------");
     }
 }
->>>>>>> master

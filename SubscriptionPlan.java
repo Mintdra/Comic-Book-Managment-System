@@ -1,14 +1,5 @@
-<<<<<<< HEAD
 class SubscriptionPlan {
-    int plan_id;
-    String plan_name;
-    int duration_days;
-    String feature_included;
-    String payment_methods;
-    double price;
-}
-=======
-class SubscriptionPlan {
+
     int plan_id;
     String plan_name;
     int duration_days;
@@ -25,4 +16,8 @@ class SubscriptionPlan {
         this.price = price;
     }
 }
->>>>>>> master
+
+// Check Balance and Payment (Money is it Enough to pay for the subscription plan)
+// Purchased Subscription Plan also Purchase date
+// Cancel Subscription Plan; Renew Subscription Plan
+// Notify the user about the purchase & the near date expires

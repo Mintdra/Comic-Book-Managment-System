@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 class Customer {
+
     int customer_id;
     String username;
     String email;
@@ -7,16 +7,7 @@ class Customer {
     String profile_image;
     String preferences;
     String subscription_status;
-}
-=======
-class Customer {
-    int customer_id;
-    String username;
-    String email;
-    String password;
-    String profile_image;
-    String preferences;
-    String subscription_status;
+
     public Customer(int customer_id, String username, String email, String password, String profile_image,
             String preferences, String subscription_status) {
         this.customer_id = customer_id;
@@ -28,4 +19,3 @@ class Customer {
         this.subscription_status = subscription_status;
     }
 }
->>>>>>> master
