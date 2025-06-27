@@ -13,9 +13,6 @@ public class Comic {
     public String category;
     public String comments;
 
-    private Comic() {
-    }
-
     public static Comic createComic(int comic_id, String title, String author, String description, String cover_image, String release_date, String status, String category) {
         Comic comic = new Comic();
         comic.comic_id = comic_id;
